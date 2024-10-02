@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: whitesmoke;
+
+  & > .logo,
+  .nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    & > div > a {
+      text-decoration: none;
+      letter-spacing: 5px;
+      color: black;
+    }
+  }
+}
+
+.header > .logo {
+  justify-content: flex-start;
+}
+
+.header > .nav {
+  justify-content: flex-end;
+
+  & > div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  & > div:hover {
+    background-color: rgb(191, 189, 189);
+  }
+}
+.header > .logo > .item {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & > a {
+    letter-spacing: 5px;
+  }
+
+  & > a > b {
+    letter-spacing: 5px;
+  }
+}
+
+.header > .logo > .item:hover {
+  background-color: rgb(191, 189, 189);
+}
+
+/* _______________________________________________________________ */
+
+.image {
+  width: 100%;
+  height: 600px;
+  background-image: url(./images/architect.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image > .label {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 3px;
+
+  & > .br {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #000000;
+    opacity: 0.7;
+  }
+
+  & > .archi {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+}
+
+/* ______________________________________________________ */
+
+.pictures {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.pictures > .top {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.pictures > .bottom {
+  width: 100%;
+  min-height: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.pictures > .bottom > div > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* _______________________________________________________________ */
+
+.about {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3%;
+  font-size: 14px;
+}
+
+.about > p {
+  max-width: 100%;
+}
+
+/* __________________________________________________________  */
+
+.contacts {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.contacts > div {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px rgba(164, 162, 162, 0.5);
+}
+
+.contacts > div > .img {
+  width: 100%;
+  height: 50%;
+  background-color: aquamarine;
+  display: flex;
+}
+
+.contacts > div > .img > img {
+  max-width: 100%;
+  /* height: 100%; */
+  filter: grayscale(70%);
+}
+
+.contacts > div > .desc {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6%;
+  padding: 15px;
+}
+
+.contacts > div > .desc > h1 {
+  font-weight: 400;
+}
+
+.contacts > div > .desc > span {
+  font-weight: 200;
+}
+
+.contacts > div > .desc > p {
+  max-width: 250px;
+  text-align: left;
+  line-height: 20px;
+}
+
+.contacts > div > .desc > button {
+  width: 100%;
+  height: 45px;
+  background-color: #f1f1f1;
+  border: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.contacts > div > .desc > button:hover {
+  background-color: rgb(155, 153, 153);
+}
+
+/* _____________________________________________________  */
+
+.last {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.last > .top {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 50px;
+}
+
+.last > .bottom {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.last > .bottom > input {
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(194, 193, 193);
+}
+
+.last > .bottom > button {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.last > .bottom > button:hover {
+  background-color: #444;
+}
+
+/* _________________________________________________________________  */
+
+.map {
+  width: 100%;
+  height: 700px;
+  background-image: url(./images/map.jpg);
+  background-size: cover;
+  background-position: center;
+}
