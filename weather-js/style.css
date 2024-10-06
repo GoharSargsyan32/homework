@@ -1,0 +1,126 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 3%;
+}
+
+.container > .search {
+  width: 100%;
+  height: 15%;
+  border: 1px solid orange;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  
+  & > input {
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  & > button {
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    
+  }
+}
+
+.container > .country {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.country > .city {
+  width: 50%;
+  height: 100%;
+  border: 1px solid orange;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.country > .city > .qaxaq {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.country > .city > i {
+  position: absolute;
+  transform: translate(-130px,-110px);
+}
+
+.country > .city > p {
+  position: absolute;
+  transform: translate(-120px,110px);
+}
+
+.country > .count {
+  width: 50%;
+  height: 100%;
+  border: 1px solid orange;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.country > .count > .erkir {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.country > .count > p {
+  position: absolute;
+  transform: translate(-110px,110px);
+}
+
+.container > .temp {
+  width: 100%;
+  height: 35%;
+  border: 1px solid orange;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container > .temp > .celsius {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container > .temp > i {
+  position: absolute;
+  transform: translate(-270px,-60px);
+}
+
+.temp > .weather-image > i {
+  position: absolute;
+  transform: translate(260px,-70px);
+}
